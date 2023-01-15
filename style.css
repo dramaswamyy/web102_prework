@@ -21,6 +21,16 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: baseline;
+}
+
+.stats-container:active {
+    color: darkslategray;
+}
+
+.stats-container:hover {
+    box-shadow: 0 0 30px lightblue;
+    cursor: pointer;
 }
 
 .stats-card {
@@ -72,4 +82,12 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.5);
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
